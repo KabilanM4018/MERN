@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times ,sans-serif;
+    
+
+}
+body{
+    min-height: 100vh;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+
+
+}
+
+h1,h2{
+    color: black;
+    justify-content: center;
+}
+h3{
+    color: gray;
+}
+.btn {
+    background:rgb(10,168,226) ;
+    color: aliceblue;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: rgb(10,168,226);
+    background:aliceblue;
+    padding: 3px 8px;
+    border-radius: 2px solid aliceblue;
+}
+
+.container{
+    position: fixed;
+    min-height: 100vh;
+    width: 20vw;
+    display: grid;
+    background-color: rgb(10, 168, 226);
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #ddd9d9;
+}
+table {
+    padding: 10px;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+
+.container .left{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container li{
+    font-size: 24px;
+    padding: 10px 24px;
+    color:aliceblue;
+}
+.container li i{
+    margin-bottom: 10px;
+   display: inline-flex;
+   padding: 15px;
+   gap: 10px;
+   align-items: center;
+}
+
+.container li:hover{
+    background-color: aliceblue;
+    color: rgb(10, 168, 226);
+    border-radius: 30px;
+    cursor:pointer;
+}
+.button{
+    background-color: rgb(10,168,226);
+    color: aliceblue;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background-color: aliceblue;
+    color: rgb(10,168,226);
+    border: 2px solid rgb(10, 168, 226);
+    padding: 5px 10px;
+
+}
+.main-container{
+    position: absolute;
+    right: 0;
+    width: 79vw;
+    height: 200vh; 
+    background-color: aliceblue;  
+}
+
+.main-container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 79vw;
+    height: 10vh;
+    background-color:aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgb(0, 0, 0,0.2);
+}
+.main-container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.main-container .header .nav .search {
+    flex: 3;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.main-container .header .nav .search input{
+    border: none;
+    background: rgb(186, 216, 236);
+    border-radius: 30px;
+    padding: 10px;
+    width: 50%;
+}
+.use{
+    padding-left: 87px;
+    display: inline-flex;
+    color: #0aa8e2;
+}
+.user{
+    color: #0aa8e2;
+    font-size: medium;
+    justify-content: center;
+}
+.main-container .header .nav .search button {
+    width: 40px;
+    color: #f0f8ff;
+    height: 40px;
+    border: none;
+    display: flex;
+    border-radius: 60%;
+    align-items: center;
+    justify-content: center;
+    background-color: #bad8ec;
+}
+/* end of main-container */
+.main-container.content{
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+.main-container .content .cards {
+    padding: 80px 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.main-container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    border-radius: inherit;
+    background:rgb(186, 216, 236) ;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  
+.icon-case {
+    font-size: 35px;
+    padding: 18px 21px;
+    color: #0aa8e2;
+}
+
+.main-container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.main-container .content .content-2 .recent-payments {
+    min-height: auto;
+    flex: 5;
+    background: rgb(186, 216, 236);
+    margin: 100px 46px 32px 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    width: 645px;
+    border-radius:18px;
+}
+.main-container .content .content-2 .new-students {
+    flex: 2;
+    background:rgb(186, 216, 236) ;
+    min-height: auto;
+    margin: 119px 46px 32px 100px;
+    padding: 4px 50px;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}

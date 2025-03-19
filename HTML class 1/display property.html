@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dis.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Brand</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Students</a></li>
+                    <li><a href="#">Teachers</a></li>
+                    <li><a href="#">Schools</a></li>
+                    <li><a href="#">Income</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <input type="text" placeholder="Search...">
+                <button class="add-btn">Add New</button>
+                <div class="icons">
+                    <span></span>
+                    <img src="profile.png" alt="Profile">
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <section class="stats">
+                <div class="card"> 
+                    <p>2194</p>
+                    <span>Students</span>
+                </div>
+                <div class="card">
+                    <p>53</p>
+                    <span>Teachers</span>
+                </div>
+                <div class="card">
+                    <p>5</p>
+                    <span>Schools</span>
+                </div>
+                <div class="card">
+                    <p>$350000</p>
+                    <span>Income</span>
+                </div>
+            </section>
+
+            <!-- Recent Payments & New Students -->
+            <section class="tables">
+                <div class="table-box">
+                    <h3>Recent Payments</h3>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>School</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><button class="view-btn">View</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="table-box">
+                    <h3>New Students</h3>
+                    <ul class="student-list">
+                        <li>
+                            <img src="profile.png" alt="Student">
+                            <span>John Steve Doe</span>
+                            <button class="view-btn">📄</button>
+                        </li>
+                        <li>
+                            <img src="profile.png" alt="Student">
+                            <span>John Steve Doe</span>
+                            <button class="view-btn">📄</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

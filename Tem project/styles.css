@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #e9e107da;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.navbar {
+    background-color: #2c11c5;
+    padding: 15px 0;
+}
+.menu-bar {
+    background-color: #ee3608;
+    overflow: hidden;
+}
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu-bar li {
+    float: left;
+}
+.menu-bar li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.menu-bar li a:hover {
+    background-color: #575757;
+}
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ffcc33;
+}
+
+.hero {
+    background: url('images/hero-temple.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f21f1f;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 48%;
+    margin: 1%;
+    border-radius: 8px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

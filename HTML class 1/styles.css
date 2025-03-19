@@ -1,0 +1,96 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtnvAOajH9gS4C30cRF7rD_voaTAKly2Ntaw&s');
+    background-size:small;
+    background-position: right;
+    background-repeat: no-repeat;repeat;            
+    /* background-size: cover; */
+
+    /* Flex */
+  
+
+
+
+}
+/* Element type selector */
+p{
+    color: rgb(4, 120, 228);
+    font-size: x-large;
+    background-color: rgb(172, 229, 229);
+    font-style: normal;
+}
+/*  Descending Element type selector*/
+Div p{
+    background-color: aquamarine;
+    color: blueviolet;
+    font-style: unset;
+    font-variant: normal;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/* Class selector */
+.He{
+    color: rgb(17, 160, 237);
+    align-content: center;
+    text-align: center;
+    font-size: xx-large;
+
+    
+}
+
+/* Id selector */
+#He{
+    font-size:x-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+/* Adjacent sibling selector */
+
+.myd + p {
+   color: brown;
+}
+
+/* Group selector */
+
+.he,.me.span{
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(8, 155, 106);
+    background-color: rgb(195, 195, 212);
+}
+     button{
+    background-color: rgb(146, 218, 177);
+    align-content: center;
+    color: gold;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    content: normal;
+} 
+button:hover {
+    background-color: rgb(195, 42, 8);
+    padding-right: 30px;
+    padding-bottom: 20px;
+
+}
+
+
+    /* button padding */
+#kabi button{
+    background-color:rgb(5, 75, 189);
+    padding: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+

@@ -1,0 +1,183 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.rb-header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    max-width:1200px;
+    margin: auto;
+}
+.rb-logo{
+    width: 5rem;
+    height: 3rem;
+    cursor: pointer;
+} 
+
+.vertical_space{
+    width: 1px;
+    height: 20px;
+    background: #e0e0e0;
+    margin: 0 calc(4rem - 2rem) 0 4rem;
+}
+.rb-vertical{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.img-rb-vertical1{
+      height: 20px;
+      margin-bottom: 8px;
+      width: 38px;
+      filter: grayscale(1) brightness(4);
+      padding-left: 33px;
+}
+.img-rb-vertical{
+    height: 17px;
+    margin-bottom: 8px;
+    filter: grayscale(1) brightness(0);
+    width: 5.25rem;
+
+}
+.Bus-active{
+    display:flex;
+    flex-direction: column;
+    padding:11px;
+    background-color: #d84e55;
+    margin-right: 16px;
+    text-align: center;
+    position:relative;
+    width:112px;
+    border-radius: 5px;
+}
+    
+.Train-active{
+    color: black;
+    font: 14px montserrat;
+    background: #ffffff;
+    margin: 0px 16px 0px 0px;
+    padding: 14px 10px;
+    display: grid;
+
+
+}
+.name-rb-vertical{
+    color: #ffffff;
+    font-weight: 500;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+}
+.name-rb-vertical2{
+    color: #1d1d1d;
+    font-weight: 500;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.second-part{
+    display: ruby;
+    text-underline-offset:none;
+    gap: 16px;
+    align-items: center;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+
+}
+.second-part1{
+         font-size: 22px;
+         margin-right: 16px;
+         width: 22px;
+}
+.help{
+    color: #1d1d1d;
+    font-weight: 50px;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+
+}
+.lang{
+    color: #1d1d1d;
+    font-weight: 50px;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+}
+.account{
+    color: #1d1d1d;
+    font-weight: 50px;
+    text-wrap: nowrap;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.banner{
+    width: 100%;
+    background-repeat: round;
+    background-size: cover;
+    height: 32.5rem;
+    pointer-events: none;
+    cursor: default
+    
+}
+.text{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        position: absolute;
+        top: 150px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 21px 0px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
+.container{
+       display: flex;
+        width: 100%;
+        justify-content: center;
+        position: absolute;
+        top: 190px;
+}
+.part-1{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.separate{
+    display: flex;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 12px, rgba(0, 0, 0, 0.05) 0px 0px 0px;
+    border-radius: 32px;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+
+

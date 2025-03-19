@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv='x-UA-compatible' content='IE=edge'>   
+     <title>HTML CLASS</title>
+     <meta name='viewport' content='width=device-width,initial-scale=1'>
+     <meta http-equiv="refresh" content="5" target="blank">
+     <link rel='stylesheet' type='text/css' media='screen' href='style.css' >
+     <script src="main.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <style>
+        h3{
+            background-color: rgb(0, 179, 255);
+        }
+        .heading1{
+         background-color:green ;
+         color: rgb(212, 255, 0);
+         font-size: 30px;
+        }
+        .heading2{
+         background-color:blueviolet;
+         color:purple;
+         font-size: 30px;
+         
+        }
+        .heading3{
+            background-color:rgb(226, 226, 43);
+         color:rgb(128, 0, 30)
+         font-size: 50px;
+        }
+        .heading4{
+            background-color:rgb(49, 226, 43);
+         color:purple
+         font-size: 50px;
+        }
+        
+     </style>
+
+</head>
+<body>
+   <center> <h2>HTML Overview</h2></center>
+
+    <h1 style="background-color: blueviolet;">Welcome to HTML CLASS</h1>
+    <span style="background-color:rgb(180, 226, 43);">Welcome to inline element</span>
+    <span style="background-color:rgb(43, 177, 226);">Welcome to inline element</span>
+    <p>  I am Kabilan from Madurai</p>
+    <b> KABILAN M</b><br><br>
+    <i> Passinate to work in IT field</i><br><br>
+    <strong> Kabil</strong><br>
+    <em> BE Mechinal engineer  </em><br>
+    <small>Junior </small><br>
+    <mark>web developer</mark><br>
+    <del> Its used to strike the content</del><br>
+    <ins>Its used to underline the content</ins><br>
+    <sub>Its used to subscript the text</sub><br><hr>
+    
+        <!--quotation-->
+        <q>It refer quotation mark</q><br>
+        <address> Contant information</address><br>
+        <bdo dir="rtrl">Kabilan</bdo>
+        <a href="mailto: kabilan200207@gmail.com">mail me </a>
+        <a href="www.google.com"><button>Click</button></a><br>
+        <img src="C:\Users\kabilan\Downloads\photo.jpg" width="100px" height="100px" style="border-radius: 50%;">
+        <hr>
+       <center> <h2>Ordered List, Unordered List, Description List</h2></center>
+         <!--Orderedlist-->
+         <ol>
+            <li>Hi</li>
+            <li>Hello</li>
+            <li>Welcome</li>
+         </ol>
+
+         <!--Reversed for orderedlist-->
+         <ol reversed>
+            <li>Kabilan</li>
+            <li>Nikilesh kumar</li>
+         </ol>
+         <hr>
+
+         <!--Orderedlist for starting-->
+         <ol start="3">
+            <li>Html</li>
+            <li>Css</li>
+            <li>Java script</li>
+         </ol>
+         
+
+         <!--Unorderedlist-->
+         <ul type="square">
+            <li>Abisheck</li>
+            <li>Suhail</li>
+            <li>Rajkumar</li>
+         </ul>
+         <hr>
+
+         <!--Descriptionlist-->
+         <dl>
+            <dt>Coffee</dt>
+            <dd>Its is a hot drink</dd>
+            <dt>Ice</dt>
+            <dd>Its is a cool drink</dd>
+         </dl>
+         <hr>
+
+         <center> <h2>HTML ENTITIES</h2></center>
+         <!--Html Entities-->
+         <h1>&lt;</h1>
+         <h1>&gtdot;</h1>
+         <h1>&AMP;</h1>
+         <h1>&quot;</h1>
+         <h1>&pound;</h1><hr>
+
+         <!--Html Class Attributes-->
+
+         <h3>Bhuvanesh</h3>
+         <h3 class="heading1">Karthikeyan</h3>
+         <h3 class="heading2">Karuna</h3>
+         <h3 class="heading3">Krish</h3>
+         <h3 class="heading4">Jhon</h3><hr>
+
+       <!--Html Forms-->
+       <center><h2>HTML FORMS</h2></center>
+         <form>
+            <label> <B>First Name:</B></label>
+            <input type="text" id="Frame" name="Kabi" placeholder="Enter first name"><br>
+            <label for="course"><b>Choose Course:</b></label>
+            <select id="course" name="course">
+               <option value="option">Python</option>
+               <option value="option">Html</option>
+               <option value="option">Css</option>
+               <option value="option">Javascript</option>
+            </select><br>
+            <textarea name="Great"row="10" colomns="10">Description</textarea><br>
+            <button type="button">Click me</button><br>
+            <label for="Vehicles"><b>Choose Vehicles:</b></label>
+            <input type="checkbox".name="Vehicles" checked>Car
+            <input type="checkbox".name="Vehicles">Cycle
+            <input type="checkbox".name="Vehicles">Bike<br>
+            <label for="Gender"><B>Gender:</B></label>
+            <input type="radio".Name="Gender",value="male">male
+            <input type="radio".Name="Gender",value="Female">Female<br>
+            <label for="DOB"><b>DOB:</b></label>
+            <input type="date".Name="birth date"><br>
+            <label for="Date-time"><b><Date-time>date time</Date-time></b></label>
+            <input type="date-time".Name="date-time"><br>
+            <label for="Email id"><b>Email ID</b></label>
+            <input type="Email".Name="Email id", placeholder="Enter a email id"><br>
+            <label for="file"><b>My File</b></label>
+            <input type="file".Name="my file"><br>
+            <center><input type="submit">
+                   <input type="reset">
+
+            </center>
+            </form>
+         
+       
+        <hr>
+
+
+        <!--HTML TABLES-->
+        <center><h2>TABLES</h2> </center>
+        <table border="10"bordercolor="purple"background-color="blue">
+
+         <tr>
+            <th colspan="2">Name</th>
+            <th>Age</th>
+            <th>Course</th>
+         </tr>
+         <tr>
+            <td>Muthu</td>
+            <td rowspan="2">21</td>
+            <td>Python</td>
+         </tr>
+         <tr>
+            <td>Pavi</td>
+            <td>22</td>
+            <td>C</td>
+         </tr>
+         <tr>
+            <td>Karan</td>
+            <td>22</td>
+            <td>UI/UX</td>
+         </tr>
+
+        </table><hr>
+
+        <table border="3" width="400">
+           <th colspan="10">
+            Time table for Class 1 to 3 
+           </th>
+           <tr>
+            <th>Days/Timing</th>
+            <th> Prayer<br>8:30 to 9:00</th>
+            <th> 1 <br>9:00 to 9:40</th>
+            <th> 2 <br>9:40 to 10:25</th>
+            <th> Breake <br>10:25 to 10:40</th>
+            <th> 3 <br> 10.40 to 11.25</th>
+            <th> 4 <br> 11.25 to 11.40</th>
+           </tr>
+           <tr>
+            <td>Monday</td>
+            <td rowspan="5">Prayer</td>
+            <td>Tamil</td>
+            <td>English</td>
+            <td rowspan="5">Breake</td>
+            <td>Maths</td>
+            <td>Social</td>
+           </tr><br>
+           <tr>
+            <td>Tuesday</td>
+            <td>Tamil</td>
+            <td>English</td>
+            <td>Maths</td>
+            <td>Social</td>
+         </tr>
+         <tr>
+            <td>Wednesday</td>
+            <td>Social</td>
+            <td>English</td>
+            <td>Tamil</td>
+            <td>Social</td>
+         </tr>
+         <tr>
+            <td>Thrusday</td>
+            <td>Tamil</td>
+            <td>Tamil</td>
+            <td>Maths</td>
+            <td>Maths</td>
+         </tr>
+         <tr>
+            <td>Friday</td>
+            <td>English</td>
+            <td>Tamil</td>
+            <td>science</td>
+            <td>Maths</td>
+         </tr>
+        </table><br><hr>
+        <table border="1"bordercolor="blue">
+      <tr>
+         <th>Thumbnail</th>
+         <th >Name</th>
+         <th>Summary</th>
+         <th>Price</th>
+         <th>Review</th>
+         <th>Buy</th>
+      </tr>
+      <tr>
+         <td><img src="C:\Users\kabilan\Downloads\Tshirt 1.jpg"></td>
+         <td>Sports T-shirt</td>
+         <td>This is the product Description</td>
+         <td><del>&pound;15.00</del><br>&pound;12.00 </td>
+         <td><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i></i></i></td>
+         <td><button style="background-color:rgb(10, 159, 234); color:rgb(21, 25, 27)">Add to cart</button></td></tr>
+         <tr>
+         <td><img src="C:\Users\kabilan\Downloads\Tshirt 2.jpg"></td>
+         <td> GRSports <br>T-shirt</td>
+         <td>This is the product Description</td>
+         <td><del>&pound;15.00</del><br>&pound;10.00 </td>
+         <td><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i></i></i></td>
+         <td><button style="background-color:rgb(10, 159, 234); color:rgb(21, 25, 27)">Add to cart</button></td></tr>
+         <tr>
+            <td><img src="C:\Users\kabilan\Downloads\Tshirt 3.jpg"></td>
+            <td> Styling Sports <br>T-shirt</td>
+            <td>This is the product Description</td>
+            <td><del>&pound;12.00</del><br>&pound;8.00 </td>
+            <td rowspan="2"><i class="fa-solid fa-star"><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"><i class="fa-solid fa-star"></i></i></i></i></td>
+            <td><button style="background-color:rgb(10, 159, 234); color:rgb(21, 25, 27)">Add to cart</button></td></tr>
+
+      </table><br><hr> 
+
+       <!--HTML VIDEO-->
+       <center><h2>HTML VIDEOS</h2> </center>
+       <Center>
+       <video src="C:\Users\kabilan\Downloads\mov_bbb.mp4" type="video"  width="400px" height="400px"controls></video></Center><hr><br>
+
+       <!--HTML AUDIO-->
+       <center><h2>HTML AUDIO</h2> </center>
+       <Center>
+       <audio style="background-color: rgb(162, 0, 255);" color="blue" src="C:\Users\kabilan\Downloads\VARAHI KAVASAM.mp3"  type="varahi"controls></audio></Center><hr><br>
+
+       <!--HTML IFRAME-->
+       <center><h2>HTML IFRAME</h2> </center>
+       <center>
+
+         <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+         </iframe><br><hr>
+         <iframe src= "" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+   <div style="height: 100px; width: 100px; padding:50px; border:5px solid black; margin:50px">welcome</div>
+
+   
+
+
+     
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+</body>
+</html>

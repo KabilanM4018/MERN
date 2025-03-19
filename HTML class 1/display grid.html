@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 67fr 2fr ;
+            grid-template-rows: auto 1fr auto;
+            gap: 10px;
+            width: 80%;
+            margin: auto;
+            background-color: #519ddb;
+            padding: 5px;
+          }
+          .gird-container{
+            background-color: rgba(194, 12, 12, 0.8);
+            padding: 10px;
+            border: #519ddb;
+          }
+          .container {
+            grid-area: container;
+            text-align: center;
+          }
+          .menu {
+            grid-area: menu;
+          }
+          .content {
+            grid-area: content;
+          }
+          #End {
+            grid-area: footer;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>Display grid </h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nisi earum, voluptatibus debitis quas exercitationem quibusdam cumque saepe dolorem quis provident tenetur tempore asperiores repellendus harum, dolor aliquam eaque cum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore explicabo vero vitae blanditiis excepturi nisi molestiae illum ut quasi rem repellendus quia tenetur, ipsum quidem dolor unde incidunt magnam quam eaque. Dolorem earum velit fugit repellat. Possimus accusantium rerum veritatis assumenda sunt iusto at fugiat minima. Dolor laboriosam voluptatibus eaque a reprehenderit asperiores vero quos, illo molestias qui facilis ullam cumque nisi quibusdam pariatur, mollitia aliquid ex reiciendis ipsam libero perferendis quas repudiandae? Odio, amet provident? Dolorum, vitae, reiciendis nisi fugiat modi fuga eligendi corporis error porro et, nihil at expedita voluptatem. Esse laboriosam, ad vel cumque alias id voluptate.
+    </p>
+    <div class="grid-container">
+       <Div class="container"><h2>My webpage </h2></Div>
+        <div class="menu">
+         <ul>
+           <li><a href="#">Link 1</a></li>
+           <li><a href="#">Link 2</a></li>
+           <li><a href="#">Link 3</a></li>
+         </ul>
+        </div>
+        <div class="content">
+            <h3>Grid-container</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos corrupti adipisci recusandae doloribus numquam error vero et, obcaecati qui eveniet necessitatibus omnis! Neque ratione minus quibusdam alias assumenda aliquam quisquam sit sed culpa molestiae! Laborum, consequuntur quam dolore voluptas nemo omnis. Ex obcaecati maxime beatae cumque asperiores facilis quasi autem?</p>
+        </div>
+        <div id="End">
+            <h2>End of the page</h2>
+        </div>
+    </div>
+</body>
+</html>

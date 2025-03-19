@@ -1,0 +1,53 @@
+.product-container{
+    width: 145px;
+    height: 260px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.product-img{
+    
+    width: 100%;
+  max-width: 400px;
+  height: auto;
+    height: 130px;
+    border-radius: 15px;
+}
+
+.product-details{
+    font-weight: bold;
+    color:#2d237b;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 5px;
+}
+
+h3{
+    font-size: 14px;
+    margin: 10px 0px;
+}
+.price{
+    font-size: 16px;
+    font-weight: bold;
+    color: #090909;
+    padding-right: 10px;
+
+}
+
+.seller{
+    font-size: 12px;
+    color:rgb(122, 122, 122);
+
+
+}
+.seller::after{
+content: "kabilan.com";
+margin-left:10px;
+
+}
+
+.delivery{
+    font-size: 12px;
+    color:rgb(169, 162, 162);
+}

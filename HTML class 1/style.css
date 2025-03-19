@@ -1,0 +1,68 @@
+/* Styling for the body */
+button {
+    background-color: rgb(146, 218, 177);
+    color: gold;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: darkgreen;
+}
+nav a {
+    background-color: rgb(222, 217, 217);
+    padding: 10px;
+    text-align: center;
+}
+nav a { 
+    color: rgb(26, 98, 162);
+    text-decoration: none;
+    margin: 10px;
+    font-size: 10px;
+
+}
+nav a  :hover{
+    color: yellow;
+
+}
+.box{
+    width: 300px;
+    height: 10px;
+    background-color: lightgray;
+    text-align: center;
+    line-height: 100px;
+    font-size: 18px;
+    margin:50px auto;
+    box-shadow: 5px 5px 10px gray;
+
+}
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+
+.hover-img{
+    width: 300px;
+    transition: transform 0.3s;
+}
+.hover-img{
+    transform: scale(1.1);
+} 
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid lightslategray;
+    border-top: 5px solid blue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0%{ transform: rotate(0dge);}
+    100%{ transform:rotate(360deg);}
+    
+}

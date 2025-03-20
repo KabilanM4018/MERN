@@ -12,16 +12,18 @@ text{
 
 .img{
  justify-content:center;
- z-index: -1;
  margin-left: 50px;
  margin-top: 40px;
  padding: 50px;
 display: flex;
 position: relative;
-filter: grayscale(80px);
+filter: brightness(50%);
 filter:drop-shadow(8px 8px 10px rgb(46, 58, 46))
  }
 
+ .img:hover{
+  opacity:0.5;
+ }
  .color {
   position: ;
  }
@@ -58,7 +60,24 @@ filter:drop-shadow(8px 8px 10px rgb(46, 58, 46))
   border: 5px solid rgb(11, 10, 10);
   background: purple;
  }
-
+ .main{
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;;
+ }
+ a{
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  text-decoration: none;
+  color:black;
+  border: 2px solid rgb(145, 16, 16);
+  padding-left:10px ;
+  text-align: center;
+  font-weight: bold;font-size: 25px;
+ }
+a.hover{color: rgb(205, 35, 35);
+}
 .table{
   margin-top: 20px;
   margin-left: 20px;
@@ -86,16 +105,68 @@ tr:nth-child(odd){
 
 }
 
-
-
-
  p.img{
   background-image: url('https://www.w3schools.com/css/img_fjords.jpg"');
   position: relative;
   z-index:-1;
   text-align: center;
 }
- 
+.button{
+  margin-top: 20px;
+  margin-left: 20px;
+  border: none;
+ }
+
+.one{
+   border:none;
+   background-color: rgb(189, 224, 35);
+   width: 100px;
+   height: 30px;
+   border: 1px solid plum;
+}
+.two{
+  margin-left: 10px;
+  width: 100px;
+  height: 30px;
+  background-color:orangered ;
+  border-radius: 60px;
+
+}
+.three{
+  margin-left: 10px;
+  width: 100px;
+  height: 40px;
+  background-color:rgb(211, 53, 156) ;
+  border: 3px solid rgb(81, 56, 4);
+  border-radius: 10px;
+}
+.four{
+  margin-left: 10px;
+  width: 300px;
+  height: 30px;
+  background-image: linear-gradient(rgb(240, 224, 218),Green);
+  border: 3px solid rgb(39, 35, 33);
+  border-radius: 10px;
+}
+.five{
+  margin-top: 20px;
+  margin-left: 200px;
+  width: 160px;
+  height: 60px;
+  background-image: radial-gradient(rgb(255, 0, 170),rgb(49, 191, 239),rgb(0, 255, 119));
+  border: 3px solid rgb(58, 64, 148);
+  box-shadow: -5px 5px 10px rgb(13, 111, 51);
+  border-radius: 30px;
+}
+.one:hover{
+  background-color: rgb(51, 35, 226);
+  
+}
+.two:hover{background-color: aqua; color: rgb(238, 8, 149);}
+.three:active{background-color: rgb(232, 196, 255);}
+.four:active{color: aliceblue;}
+.five:hover{color: rgb(22, 199, 52); font-size: 20px; cursor:pointer; opacity: 0.8;}
+
 </style>
 </head>
 <body>
@@ -151,21 +222,24 @@ This div element has position: static;
         </table>
 
   </div>
-  
-   
-  
-
-
-
-
-
-
-
-
-
-
-
-
+  <div class="main">css pagination</div>
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">&raquo;</a>
+  </div>
+<div class="button"> Buttons</div>
+<div class="button">
+  <button class="one">Click me</button>
+  <button class="two">view more</button>
+  <button class="three">view all</button>
+  <button class="four">Next</button>
+  <button class="five">Click</button>
+</div>
 
 
 

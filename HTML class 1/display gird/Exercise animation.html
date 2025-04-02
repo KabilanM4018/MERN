@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise animation</title>
+    <style>
+
+    .box{
+            width: 200px;
+            height: 150px;
+            background-color: palegreen;
+            display: flex;
+            justify-content: center; 
+            animation-name:color;
+            animation-duration: 5s;
+        }  
+        @keyframes color{
+            0%{background-color: red;}
+            25%{background-color: yellow;}
+            50%{background-color: green;}
+            75%{background-color: blue;}
+            100%{background-color: palegreen}
+        }
+
+        .box1{
+            margin-top: 50px;
+            width: 150px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            background-color: aqua;
+            border: 5px solid black;
+            border-radius: 5px;
+            animation-name: box1;
+            animation-timing-function:linear;
+            animation-duration: 5s;
+           
+            
+        }
+        @keyframes box1{
+            from{margin-left:50%;}
+            to{background-color: aquamarine;  
+                margin-left:5%}
+        }
+        .box2{
+            margin-top: 50px;
+            width: 150px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            background-color: palevioletred;
+            border: 5px solid black;
+            border-radius: 10px;
+            animation-name: box2;
+            animation-timing-function:ease-in;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            
+        }
+        @keyframes box2{
+            from{margin-left:50%;}
+            to{background-color: aquamarine;
+                margin-left:0.1%}
+        }
+        .box3{
+            margin-top: 50px;
+            width: 150px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            background-color: palegoldenrod;
+            border: 5px solid black;
+            border-radius: 10px;
+            animation-name: box2;
+            animation-timing-function:ease-out;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            
+        }
+        @keyframes box3{
+            from{margin-left:50%;}
+            to{background-color: aquamarine;
+                margin-left:0.1%}
+        }
+        .box4{
+            margin-top: 50px;
+            width: 150px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            background-image    :linear-gradient(red,black);
+            border: 5px solid black;
+            border-radius: 10px;
+            animation-name: box4;
+            animation-timing-function:ease-in-out;
+            animation-duration: 5s;
+            animation-direction: reverse;
+            
+        }
+        @keyframes box4{
+            from{margin-left:50%;}
+            to{ background-color: rgb(254, 149, 12);
+                margin-left:0.1%}
+        }
+
+        .name{
+            margin-top: 50px;
+            animation-name: text;
+            animation-duration: 2s;
+            animation-fill-mode:both;
+        }
+        @keyframes text{
+            from{margin-left:50%;}
+            to{top:0.1%;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+<div class="container">
+    <div class="box1">Linear</div>
+    <div class="box2">Ease-in</div>
+    <div class="box3">Ease-out</div>
+    <div class="box4">Ease-in-out</div>
+</div>
+<div class="name">Kabilan</div>
+</body>
+</html>

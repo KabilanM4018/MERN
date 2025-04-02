@@ -1,15 +1,45 @@
-{
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "http://localhost:8080",
-            "webRoot": "${workspaceFolder}"
-        }
+X={  
+    "name":"Askar matriculation school",
+    "academicyear":"2024-2025",
+    "student":[                         
+                {
+                    "name":"Kabilan M",
+                    "class":"10th",
+                    "rollno":1010,
+                    "marks":{
+                        "Tamil":80,
+                        "English":81,
+                        "Maths":78,
+                        "Science":85,
+                        "Social Science":97,
+                    },
+                    "total marks":421,
+                    "percentage":84.2,
+                    ""
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     ]
 }

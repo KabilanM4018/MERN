@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <select class="form-select" aria-label=".form-select-lg example">
+    <option selected>Open this select menu</option>
+    <option value="1">One</option>
+    <option value="2">Two</option>
+    <option value="3">Three</option>
+  </select>
+
+  <label for="customRange1" class="form-label">Range</label>
+  <input type="range" class="form-range" id="disabledrange" disabled>
+
+  <div class="input-group input-group-lg mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+  </div>
+
+
+  <div class="row g-2">
+    <div class="col-md">
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
+          value="mdo@example.com">
+        <label for="floatingInputGrid">Email address</label>
+      </div>
+    </div>
+    <div class="col-md">
+      <div class="form-floating">
+
+        <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
+          <option selected>Open this select menu</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <label for="floatingSelectGrid">Works with selects</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert alert-success" role="alert">This is message!</div>
+
+  <div class="alert alert-primary" role="alert">
+    primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
+
+  <div class="alert alert-secondary" role="alert">
+    secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
+
+
+
+  <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+
+  <button type="button" class="m-3 btn btn-success position-relative">
+    Account
+    <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-pill">
+    </span>
+  </button>
+
+  <span class="bg-warning badge rounded-pill"> svs</span>
+
+
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">option 1</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="checkbox" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">option 2</label>
+  </div>
+
+
+  <div>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-outline-info">Done</button>
+  </div>
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../booststrap/imagw.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../booststrap/images.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../booststrap/images1.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!--collapse-->
+  <p>
+    <a class="m-3 btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+      aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+      aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+      aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden
+          by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          Some placeholder content for the second collapse component of this multi-collapse example. This panel is
+          hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- dropbutton split -->
+  <div class=" m-3 btn-group">
+    <button class="btn btn-secondary btn-sm" type="button">
+      Large split button
+    </button>
+    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      <span class="visually-hidden">Toggle Dropdown</span>
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <!---list group-->
+
+  <ul class="list-group-numbered">
+    <li class="list-group-item active" aria-current="true">An active item</li>
+    <li class="list-group-item">A second item</li>
+    <li class="list-group-item">A third item</li>
+    <li class="list-group-item">A fourth item</li>
+    <li class="list-group-item">And a fifth one</li>
+  </ul>
+
+  <ul class="list-group">
+    <li class="list-group-item"> default list group item</li>
+    <li class="list-group-item list-group-item-primary">1</li>
+    <li class="list-group-item list-group-item-secondary">2</li>
+    <li class="list-group-item list-group-item-success">3</li>
+    <li class="list-group-item list-group-item-danger">4</li>
+    <li class="list-group-item list-group-item-warning">5</li>
+    <li class="list-group-item list-group-item-info"> 6</li>
+    <li class="list-group-item list-group-item-light"> 7</li>
+    <li class="list-group-item list-group-item-dark">8</li>
+  </ul>
+
+  <!--modals-->
+
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="m-3 button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="text-danger modal-body">
+          kanjikdgj</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- navbar-->
+  <nav class="m-4 navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+
+ 
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

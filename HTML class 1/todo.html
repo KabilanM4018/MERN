@@ -1,0 +1,125 @@
+<!-- To-do list -->
+<div id="container">
+
+  <div id="list" class="todo-list">
+    <!-- Tasks will be added here -->
+  </div>
+
+  <div id="addItem_container" class="todo-add_container">
+    <input type="text" id="addTodo" class="input_text" placeholder="Enter a task">
+    <button id="addItem-btn" class="add_item_btn" onclick="addTodo()">Add</button>
+    <button id="delete-btn" class="delete_item_btn" onclick="clearAll()">Clear</button>
+  </div>
+</div>
+
+<style>
+  #container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: 400px;
+    border: 1px solid grey;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .todo-add_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .input_text {
+    width: 65%;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+  }
+
+  .add_item_btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .delete_item_btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+  }
+
+  .delete {
+    color: red;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+</style>
+
+<script>
+  function addTodo() {
+    let inputText = document.getElementById("addTodo");
+    addItem(inputText.value);
+    inputText.value = "";
+  }
+
+  function addItem(value) {
+    if (value.trim() === "") {
+      alert("Please enter the task");
+      return;
+    }
+
+    let listItem = document.createElement("div");
+    let text = document.createElement("span");
+    let del = document.createElement("span");
+
+    listItem.className = "list-group-item";
+    text.className = "text";
+    del.className = "delete";
+
+    text.innerHTML = value;
+    del.innerHTML = "X";
+
+    del.addEventListener("click", function () {
+      listItem.remove();
+    });
+
+    listItem.appendChild(text);
+    listItem.appendChild(del);
+
+    document.getElementById("list").appendChild(listItem);
+  }
+
+  function clearAll() {
+    document.getElementById("list").innerHTML = "";
+  }
+</script>

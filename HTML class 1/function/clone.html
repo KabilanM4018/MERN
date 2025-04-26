@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #e5ddd5;
+            height: 100vh;
+        }
+        
+        .app-container {
+            display: flex;
+            height: 100vh;
+            max-width: 1400px;
+            margin: 0 auto;
+            background-color: #fff;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sidebar {
+            width: 30%;
+            border-right: 1px solid #e9edef;
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+        
+        .sidebar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f2f5;
+        }
+        
+        .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .profile-pic {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        .sidebar-actions {
+            display: flex;
+            gap: 15px;
+            color: #54656f;
+        }
+        
+        .search-bar {
+            padding: 8px 15px;
+            background-color: #f0f2f5;
+            position: relative;
+        }
+        
+        .search-bar input {
+            width: 100%;
+            padding: 8px 30px;
+            border: none;
+            border-radius: 8px;
+            background-color: #fff;
+            outline: none;
+        }
+        
+        .search-bar i {
+            position: absolute;
+            left: 25px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #54656f;
+        }
+        
+        .chat-list {
+            flex: 1;
+            overflow-y: auto;
+        }
+        
+        .chat-item {
+            display: flex;
+            padding: 10px 15px;
+            gap: 15px;
+            border-bottom: 1px solid #e9edef;
+            cursor: pointer;
+        }
+        
+        .chat-item:hover {
+            background-color: #f5f6f6;
+        }
+        
+        .chat-item.active {
+            background-color: #f0f2f5;
+        }
+        
+        .chat-info {
+            flex: 1;
+        }
+        
+        .chat-info h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .chat-info p {
+            font-size: 14px;
+            color: #667781;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .chat-time {
+            font-size: 12px;
+            color: #667781;
+        }
+        
+        .chat-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            background-color: #e5ddd5;
+            background-image: url('https://web.whatsapp.com/img/bg-chat-tile-light_a4be512e7195b6b733d9110b408f075d.png');
+        }
+        
+        .chat-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f2f5;
+            border-bottom: 1px solid #e9edef;
+        }
+        
+        .chat-actions {
+            display: flex;
+            gap: 15px;
+            color: #54656f;
+        }
+        
+        .chat-messages {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            color: #41525d;
+        }
+        
+        .welcome-screen img {
+            margin-bottom: 20px;
+        }
+        
+        .welcome-screen h2 {
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        
+        .welcome-screen p {
+            max-width: 450px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        
+        .message {
+            max-width: 60%;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 7.5px;
+            position: relative;
+            word-wrap: break-word;
+        }
+        
+        .received {
+            align-self: flex-start;
+            background-color: #fff;
+            border-top-left-radius: 0;
+        }
+        
+        .sent {
+            align-self: flex-end;
+            background-color: #d9fdd3;
+            border-top-right-radius: 0;
+        }
+        
+        .message-time {
+            font-size: 11px;
+            color: #667781;
+            text-align: right;
+            margin-top: 5px;
+        }
+        
+        .message-input {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #f0f2f5;
+            gap: 15px;
+        }
+        
+        .message-input input {
+            flex: 1;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            outline: none;
+        }
+        
+        .message-input i {
+            color: #54656f;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
+                    <span>User</span>
+                </div>
+                <div class="sidebar-actions">
+                    <i class="fas fa-status"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search or start new chat">
+            </div>
+            <div class="chat-list">
+                <!-- Chats will be dynamically added here -->
+            </div>
+        </div>
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="chat-info">
+                    <img src="https://via.placeholder.com/40" alt="Contact" class="profile-pic">
+                    <div>
+                        <h3>Select a chat</h3>
+                        <p>Last seen</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <!-- Messages will be dynamically added here -->
+                <div class="welcome-screen">
+                    <img src="https://via.placeholder.com/300" alt="WhatsApp">
+                    <h2>WhatsApp Web</h2>
+                    <p>Send and receive messages without keeping your phone online.</p>
+                    <p>Use WhatsApp on up to 4 linked devices and 1 phone at the same time.</p>
+                </div>
+            </div>
+            <div class="message-input">
+                <i class="far fa-smile"></i>
+                <i class="fas fa-paperclip"></i>
+                <input type="text" placeholder="Type a message">
+                <i class="fas fa-microphone"></i>
+            </div>
+        </div>
+    </div>
+
+    <script src="../java script/clone.js"></script>
+</body>
+</html>

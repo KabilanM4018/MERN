@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .active {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="myobject" class="active">Toggle my class</div>
+      <button id="togglebtn">Toggle class</button>
+    </div>
+
+    <script>
+        window.onload = function() {
+            var button = document.getElementById("togglebtn");
+            var obj = document.getElementById("myobject");
+            button.addEventListener('click', function() {
+                obj.classList.toggle('active');
+                if (obj.classList.contains("active")) {
+                    alert('the element is active');
+                }
+                else {
+                    alert('the element is not active');
+                }
+            });
+        };
+
+        
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<body>
+
+    
+      <button id="togglebtn" onclick="hello()" >Toggle class</button>
+      <div>
+        <input type="text" id="inputfield" onchange="handlechange()">
+      </div>
+      <div>
+        <select id="dropdown" onchange="handle()">
+            <label for="dropdown">Select an option:</label><br>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+      </div>
+      <form id="myform">
+        <input type="submit" placeholder="Enter your name" value="submit"><br>
+      </form>
+
+      <div onload="alert('page loaded!')">
+
+      </div>
+      
+    
+    </body>
+
+    <script>
+        function hello(){
+            console.log("hello world");
+        }
+        function handlechange(){
+            var value=document.getElementById('inputfield').value;
+            console.log(value)
+
+        }
+
+        function handle(){
+            let selection=document.getElementById('dropdown').value;
+            console.log("selection option is:",selection)
+        }
+     
+         document.getElementById('myform').onsubmit=function(){
+            alert("form is submitted")
+           return false
+        }
+
+        window.onload=function (){
+            console.log("page loaded")
+        }
+        
+        
+        
+    
+        
+
+
+        
+
+    
+
+    </script>
+
+</body>
+
+</html>

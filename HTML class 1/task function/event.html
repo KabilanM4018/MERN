@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="focus" onfocus="show()">
+
+    <div id="mydiv" onmouseover="this.style.backgroundColor='Yellow'" onmouseout="this.style.backgroundColor='white'">Hover me
+
+    </div>
+    <input type="text" id="myinput">
+
+    
+
+    <script>
+        function show(){
+            document.getElementById("focus").style.backgroundColor="red";
+        }
+        const input=document.getElementById("myinput");
+        input.onkeydown=function(event){
+            console.log('keydown',event.key);
+        }
+
+     
+    </script>
+</body>
+</html>
+
+ -->
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <title>Student Registration Form</title>
+ </head>
+ <body>
+ 
+   <h2>Student Registration Form</h2>
+ 
+   <form id="registrationForm">
+     <label for="name">Name</label><br>
+     <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+ 
+     <label for="age">Age</label><br>
+     <input type="text" id="age" name="age" placeholder="Enter your age"><br><br>
+ 
+     <label for="class">Class</label><br>
+     <input type="text" id="class" name="class" placeholder="Class"><br><br>
+ 
+     <button type="submit">Submit</button>
+   </form>
+ 
+   <script>
+     document.getElementById("registrationForm").addEventListener("submit", function(event) {
+       event.preventDefault(); // prevent form from reloading the page
+ 
+       const name = document.getElementById("name").value;
+       const age = document.getElementById("age").value;
+       const className = document.getElementById("class").value;
+ 
+       console.log("Name:", name);
+       console.log("Age:", age);
+       console.log("Class:", className);
+     });
+   </script>
+ 
+ </body>
+ </html>
+
